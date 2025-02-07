@@ -1,7 +1,8 @@
 program = True
 while program:
-    A = str(input("Enter the first number  or To close Enter L ->"))
-    if A == "L":
+    try:
+        A = float(input("Enter the first number  or any letter To close ->"))
+    except:
         print("program closed")
         program= False
         break
